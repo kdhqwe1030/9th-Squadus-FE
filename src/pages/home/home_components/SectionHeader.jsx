@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const Container = styled.div`
   height: 22px;
@@ -10,14 +10,17 @@ const Container = styled.div`
 
 const HeaderTitle = styled.div`
   font-size: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px;
 `;
 
 const HeaderMore = styled.div``;
 
-const SectionHeader = () => (
+const SectionHeader = ({ headerText, moreText }) => (
   <Container>
-    <HeaderTitle>HeaderTitle</HeaderTitle>
-    <HeaderMore>see more</HeaderMore>
+    <HeaderTitle>{headerText}</HeaderTitle>
+    <HeaderMore>{moreText}</HeaderMore>
   </Container>
 );
 

@@ -15,9 +15,10 @@ const DatItem = styled.div`
   font-weight: 500;
   line-height: 24px;
   text-align: center;
-  color: ${({ isToday, isOtherMonth }) => {
-    if (isToday) return '#FF6330';
-    if (isOtherMonth) return 'blue';
+  color: ${(props) => {
+    if (props.$isToday) return '#FF6330';
+    if (props.$isOtherMonth) return '#98A2B3';
+
     return '#344054';
   }};
 `;
@@ -33,8 +34,8 @@ const CalendarDateItem = ({ week, today, currentMonth }) => {
         return (
           <DatItem
             key={day.toDateString()}
-            isToday={isToday}
-            isOtherMonth={isOtherMonth}
+            $isToday={isToday}
+            $isOtherMonth={isOtherMonth}
           >
             {day.getDate()}
           </DatItem>

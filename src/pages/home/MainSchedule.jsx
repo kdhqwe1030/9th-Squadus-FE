@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import MainScheduleItem from "./home_components/MainScheduleItem";
-import SectionHeader from "./home_components/SectionHeader";
+import styled from 'styled-components';
+import MainScheduleItem from './home_components/MainScheduleItem';
+import SectionHeader from './home_components/SectionHeader';
 
 const Container = styled.div`
   min-height: 20%;
@@ -19,7 +19,7 @@ const ScheduleContainer = styled.div`
 
 const MainSchedule = () => (
   <Container>
-    <SectionHeader></SectionHeader>
+    <SectionHeader headerText={'오늘의 일정'} moreText={''}></SectionHeader>
     <ScheduleContainer>
       <MainScheduleItem></MainScheduleItem>
       <MainScheduleItem></MainScheduleItem>

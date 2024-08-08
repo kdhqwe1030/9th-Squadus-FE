@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import MainArticleItem from "./home_components/MainArticleItem";
-import SectionHeader from "./home_components/SectionHeader";
+import styled from 'styled-components';
+import MainArticleItem from './home_components/MainArticleItem';
+import SectionHeader from './home_components/SectionHeader';
 
 const Container = styled.div`
   width: 100%;
@@ -19,7 +19,7 @@ const ArticleContainer = styled.div`
 
 const MainArticle = () => (
   <Container>
-    <SectionHeader></SectionHeader>
+    <SectionHeader headerText={'아티클'} moreText={'더보기'}></SectionHeader>
     <ArticleContainer>
       <MainArticleItem></MainArticleItem>
       <MainArticleItem></MainArticleItem>
